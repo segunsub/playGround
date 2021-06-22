@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  express:
+    env_file:
+        "./express/knexfile.js"
+    build:
+      context: ./express
+      dockerfile: ./Dockerfile
+    image: "express-tools"
+    ports:
+      - "5000:5000"
+  playground:
+    build:
+      context: ./playground
+      dockerfile: ./Dockerfile
+    image: "react"
+    ports:
+      - "3000:3000"
+    # links:
+    #   - "backend:be"

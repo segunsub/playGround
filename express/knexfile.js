@@ -21,9 +21,14 @@ module.exports = {
   production: {
     client: 'pg',
     // connection: process.env.DATABASE_URL,
-    connection: { 
-      connectionString: process.env.DATABASE_URL,
-      ssl: { rejectUnauthorized: false }
+  //   connection: { 
+  //     connectionString: process.env.DATABASE_URL,
+  //     ssl: { rejectUnauthorized: false }
+  // },
+  connection: {
+    database: 'playGround',
+    user:     'postgres',
+    password: 'Incredible1'
   },
     // connection: {
     //   user: process.env.DB_USERNAME,
