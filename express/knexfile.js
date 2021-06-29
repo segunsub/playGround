@@ -3,12 +3,15 @@ module.exports = {
 
   development: {
     client: 'postgresql',
-    // connection: process.env.DATABASE_URL,
+    // connection:  'postgres://postgres:5421@postgres:5432/playGround',
+
     connection: {
       database: 'playGround',
-      user:     'postgres',
-      password: 'Incredible1'
+      user:     'main',
+      host: 'postgres',
+      password: '5421'
     },
+    
     pool: {
       min: 2,
       max: 10
@@ -21,9 +24,15 @@ module.exports = {
   production: {
     client: 'pg',
     // connection: process.env.DATABASE_URL,
-    connection: { 
-      connectionString: process.env.DATABASE_URL,
-      ssl: { rejectUnauthorized: false }
+  //   connection: { 
+  //     connectionString: process.env.DATABASE_URL,
+  //     ssl: { rejectUnauthorized: false }
+  // },
+  connection: {
+    database: 'playGround',
+    user:     'postgres',
+    host: 'postgres',
+    password: '5421'
   },
     // connection: {
     //   user: process.env.DB_USERNAME,

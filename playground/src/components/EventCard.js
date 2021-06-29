@@ -31,7 +31,7 @@ function EventCard(props){
         }else {
           history.push('/')
         }
-      },[history])
+      },[history,event])
       
     function deleteEvent() {
         const options = {

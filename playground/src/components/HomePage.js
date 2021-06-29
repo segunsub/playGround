@@ -6,7 +6,7 @@ import { Card, Dropdown } from 'semantic-ui-react'
 import Map from './Map'
 import { Icon } from "leaflet";
 import {Helmet} from 'react-helmet';
-import Navbar from './Navbar'
+
 
 
 function HomePage(){

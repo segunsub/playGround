@@ -194,12 +194,6 @@ const fillDb = (req, res) => {
          const {Name: name,Address: address,DogRuns_Type: dogruns_type} = data
         db.add({name,address,dogruns_type},'dog_areas')
       }));
-      // fetch('https://www.nycgovparks.org/xml/events_300_rss.json')
-      // .then(response => response.json())
-      // .then(json => json.forEach(data => {
-      //    const {title,description,parknames,startdate,enddate,starttime,endtime,location,coordinates,image} = data
-      //   db.add({title,description,parknames,startdate,enddate,starttime,endtime,location,coordinates,image},'park_events')
-      // }));
       res.sendStatus(200)
   }
 const parksData = (req,res) => {
