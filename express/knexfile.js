@@ -11,7 +11,7 @@ module.exports = {
       host: 'postgres',
       password: '5421'
     },
-    
+
     pool: {
       min: 2,
       max: 10
@@ -24,7 +24,7 @@ module.exports = {
   production: {
     client: 'pg',
     // connection: process.env.DATABASE_URL,
-  //   connection: { 
+  //   connection: {
   //     connectionString: process.env.DATABASE_URL,
   //     ssl: { rejectUnauthorized: false }
   // },
@@ -42,7 +42,7 @@ module.exports = {
     //   port: 5432,
     //   ssl: { rejectUnauthorized: false }
     // },
- 
+
     pool: {
       min: 2,
       max: 10
